@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./assets/icon.png" type="image/png">
-  <link rel="stylesheet" href="normalise.css">
-  <link rel="stylesheet" href="style.css">
-  <title>MemSlider</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>MemSlider</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1>CSS Mem Slider</h1>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="slider">
+          <input type="radio" name="slider" id="slide-1" class="target" checked />
+          <label class="btn" for="slide-1"></label>
+          <input type="radio" name="slider" id="slide-2" class="target" />
+          <label class="btn" for="slide-2"></label>
+          <input type="radio" name="slider" id="slide-3" class="target" />
+          <label class="btn" for="slide-3"></label>
+          <input type="radio" name="slider" id="slide-4" class="target" />
+          <label class="btn" for="slide-4"></label>
+          <div class="slider__wrapper">
+            <div class="wrapper">
+              <img class="slide slide-1" src="./assets/img/1.jpg" alt="slide"></img>
+              <img class="slide slide-2" src="./assets/img/2.jpg" alt="slide"></img>
+              <img class="slide slide-3" src="./assets/img/3.jpg" alt="slide"></img>
+              <img class="slide slide-4" src="./assets/img/4.jpg" alt="slide"></img>
+            </div>
+          </div>
+        </div>
+          <div class="slider__title">
+            <div class="title-wrapper">
+              <div class="title">А я вам сейчас покажу откуда на Беларусь нападение готовилось</div>
+              <!-- <div class="title">МТЗ поставит на Кубу 260 тракторов. Потому что на заводе их ставить уже некуда</div>
+              <div class="title">Спецоперация и ст. 280.3 УК РФ</div>
+              <div class="title">Ты это... Заходи, если шо</div> -->
+            </div>
+            <div class="slider__control">
+              
+          </div>          
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

@@ -1,0 +1,65 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+body {
+  font-size: 18px;
+  background-color: dimgray;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: Tahoma, sans-serif;
+  color: lightcyan;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.slider__wrapper,
+.slider__title {
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  transition: all 0.3s ease-in-out;
+}
+
+.title-wrapper {
+  width: 70%;
+  padding: 0 7px;
+}
+
+.slider__control {
+  margin-left: auto;
+}
+
+.slide {
+  width: 100%;
+}
+
+.title {
+  flex-basis: 100%;
+  font-style: italic;
+  color: aliceblue;
+}
+
+#slide-2:checked ~ .slider__wrapper .wrapper {
+  transform: translateX(-100%);
+}
+
+#slide-3:checked ~ .slider__wrapper .wrapper {
+  transform: translateX(-200%);
+}
+
+#slide-4:checked ~ .slider__wrapper .wrapper {
+  transform: translateX(-300%);
+}
