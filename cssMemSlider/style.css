@@ -1,10 +1,19 @@
-body {
+* {
+  box-sizing: border-box;
+}
+
+html {
   font-size: 18px;
+}
+
+body {
+  margin: 0;
   background-color: dimgray;
 }
 
 h1 {
-  font-size: 2rem;
+  margin: 1rem;
+  font-size: 1.6rem;
   font-family: Tahoma, sans-serif;
   color: lightcyan;
 }
@@ -12,27 +21,42 @@ h1 {
 .container {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 0.5rem;
 }
 
 .slider {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0.7rem;
+  max-width: 85%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media (max-width: 450px) {
+  .slider {
+    max-width: 100%;
+  }
 }
 
 .slider__wrapper {
   display: flex;
   margin: 0 auto;
-  width: 70%;
+  width: 101%;
+  max-height: 75vh;
   overflow: hidden;
+  transform: translateX(-0.15rem);
 }
 
 .wrapper {
   display: flex;
+  align-items: center;
   transition: all 0.3s ease-in-out;
 }
 
 .slide {
+  flex: 0 0 25%;
+  display: block;
   width: 100%;
 }
 
